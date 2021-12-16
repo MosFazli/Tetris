@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="400.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Tetris Game" textAlignment="CENTER">
+            <font>
+                <Font name="Tahoma Bold" size="24.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="0.44075829383886256" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.0564391128718853" green="0.054999999701976776" blue="0.25" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.32894736528396606" green="0.051778752356767654" blue="0.051778752356767654" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+        <ImageView fitHeight="164.0" fitWidth="163.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Downloads/download.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="E_RESIZE" />
+            </cursor>
+            <FlowPane.margin>
+                <Insets bottom="5.0" />
+            </FlowPane.margin>
+        </ImageView>
+        <Button fx:id="NewGameButton" mnemonicParsing="false" onAction="#NewGameButtonClicked" text="New Game" textAlignment="CENTER" textFill="#026810">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+            <FlowPane.margin>
+                <Insets bottom="5.0" top="10.0" />
+            </FlowPane.margin>
+        </Button>
+        <Button fx:id="ScoresTableButton" mnemonicParsing="false" onAction="#ScoresTableButtonClicked" text="Scores Table" textAlignment="CENTER" textFill="#181be1">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+            <FlowPane.margin>
+                <Insets bottom="5.0" />
+            </FlowPane.margin>
+        </Button>
+        <Button fx:id="SettingsButton" mnemonicParsing="false" onAction="#SettingsButtonClicked" text="Settings" textAlignment="CENTER" textFill="#9a6d1e">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+            <FlowPane.margin>
+                <Insets bottom="5.0" />
+            </FlowPane.margin>
+        </Button>
+        <Button fx:id="ExitButton" mnemonicParsing="false" onAction="#ExitButtonClicked" text="Exit" textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</FlowPane>
